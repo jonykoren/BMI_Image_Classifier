@@ -1,1 +1,1 @@
-# Data_Mining_and_Image_Classifier 
+# Data Mining and Image Classifier 
