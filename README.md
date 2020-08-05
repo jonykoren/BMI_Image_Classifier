@@ -4,12 +4,12 @@ The BMI metric is defined as:
 <p align="center">
   <img src="http://www.sciweavers.org/tex2img.php?eq=%24BMI%20=%20\operatorname{Height}%2F\operatorname{Weight}^2%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=">
 </p>
-Where:
-* x < 18.5 --> Underweight
-* 18.5 <= x < 25 --> Normal
-* 25 <= x < 30 --> Overweight
-* 30 <= x < 35 --> Medium Obesity
-* x >= 35 --> Super Obesity
+\Where:
+\* x < 18.5 --> Underweight
+\* 18.5 <= x < 25 --> Normal
+\* 25 <= x < 30 --> Overweight
+\* 30 <= x < 35 --> Medium Obesity
+\* x >= 35 --> Super Obesity
 
 
 This repository demonstrates how to mine data from the web using 'Selenium' + Data and features creation. Then, training image classifier by pytorch transfer learning.
