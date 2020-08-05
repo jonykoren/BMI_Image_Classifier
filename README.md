@@ -4,7 +4,7 @@ The aim of this repository is to build deep NN classifier that distinguishes bet
 <p align="center">
   <img src="http://www.sciweavers.org/tex2img.php?eq=%24BMI%20=%20\operatorname{Height}%2F\operatorname{Weight}^2%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=">
 </p>
-<br>Where:
+#### <br>Where:
 <br>x < 18.5 --> Underweight
 <br>18.5 <= x < 25 --> Normal
 <br>25 <= x < 30 --> Overweight
