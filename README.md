@@ -1,6 +1,14 @@
 # Data Mining and Image Classifier 
+The aim of this repository is to build deep NN classifier that distinguishes between different BMI types of people. The BMI metric is calculated as 
+![Z(i,j)=X(i,k) * Y(k, j); k=1 to n](http://www.sciweavers.org/tex2img.php?eq=Z_i_j%3D%5Csum_%7Bi%3D1%7D%5E%7B10%7D%20X_i_k%20%2A%20Y_k_j&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+* x < 18.5 --> Underweight
+* 18.5 <= x < 25 --> Normal
+* 25 <= x < 30 --> Overweight
+* 30 <= x < 35 --> Medium Obesity
+* x >= 35 --> Super Obesity
 
-This repository demonstrates how to minining data from web using 'Selenium' + Data and features creation. Then, training image classifier by pytorch transfer learning.
+
+This repository demonstrates how to mine data from the web using 'Selenium' + Data and features creation. Then, training image classifier by pytorch transfer learning.
 
 
 ### Recommended:
