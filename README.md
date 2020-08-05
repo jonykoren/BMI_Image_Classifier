@@ -33,7 +33,8 @@ Where:
 
 ## Data example
 * [data_example.csv](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/data_example.csv)
-
+* If you're interested in the full dataset, please write me a mail:
+`Maintainer` [Jonatan Koren](https://jonykoren.github.io/) (jonykoren@gmail.com)
 
 <p align="center">
   <img src="https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/1.jpg?raw=true">
