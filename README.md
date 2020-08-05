@@ -3,7 +3,7 @@
 This repository demonstrates how to minining data from web using 'Selenium' + Data and features creation. Then, training image classifier by pytorch transfer learning.
 
 
-## Recommended:
+### Recommended:
 * python=3.6
 * selenium=3.141.0
 * torch=1.5.1
@@ -15,6 +15,9 @@ This repository demonstrates how to minining data from web using 'Selenium' + Da
 * [Dataset_Mining.ipynb](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/Dataset_Mining.ipynb)
 * [Visualize_Dataset.ipynb](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/Visualize_Dataset.ipynb)
 
+## Training image classifier
+* [train_classifier.py](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/train_classifier.py)
+* [predict_classifier.py](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/predict_classifier.py)
 
 
 <p align="center">
