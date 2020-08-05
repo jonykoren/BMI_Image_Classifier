@@ -13,7 +13,7 @@ This repository demonstrates how to minining data from web using 'Selenium' + Da
 
 ## Mining data & Dataset and feature creation
 * [Dataset_Mining.ipynb](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/Dataset_Mining.ipynb)
-* [Visualize_Dataset.ipynb](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/Visualize_Dataset.ipynb)
+* [Dataset_Creation.ipynb](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/Dataset_Creation.ipynb)
 
 ## Training image classifier
 * [train_classifier.py](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/train_classifier.py)
