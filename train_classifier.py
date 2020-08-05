@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
+#!/usr/bin/env JONY python
 import torch
 import torchvision
 import torchvision.transforms as transforms
@@ -25,10 +20,6 @@ import matplotlib.pyplot as plt
 
 ("***** Using torch successfuly *****")
 
-
-# In[2]:
-
-
 # Specify transforms using torchvision.transforms as transforms
 transformations = transforms.Compose([
     transforms.Resize(255),
@@ -49,10 +40,6 @@ val_set = datasets.ImageFolder("/homedtic/ikoren/yalla/sel/torch/test", transfor
 # Put into a Dataloader using torch library
 train_loader = torch.utils.data.DataLoader(train_set, batch_size=4, shuffle=True)
 val_loader = torch.utils.data.DataLoader(val_set, batch_size =4, shuffle=True)
-
-
-# In[6]:
-
 
 # Get pretrained model using torchvision.models as models library
 model = models.densenet161(pretrained=True)
@@ -94,20 +81,14 @@ criterion = nn.NLLLoss()
 optimizer = optim.Adam(model.classifier.parameters())
 
 
-# In[18]:
-
-
+# Save model weights checkpoints
 def save_models(epochs, model):
     print()
     torch.save(model.state_dict(), "/homedtic/ikoren/yalla/sel/models2/"+str(epochs)+".model")
     print("****----Checkpoint Saved----****")
     print()
 
-
-# In[19]:
-
-
-# Train Model
+# Train Classifier
 def train_net(epochs):
     lossiloss = []
     valiloss = []
@@ -188,14 +169,9 @@ def train_net(epochs):
     return lossiloss , valiloss , acc , epoc # Loss, Val Loss, Accuracy, number of epochs
 
 
-# In[20]:
-
-
 # Loss, Val Loss, Accuracy, number of epochs
 lossiloss , valiloss , acc , epoc = train_net(epochs = 120) # change here the number of epochs
 
-
-# In[21]:
 
 
 OUT_DIR = '/homedtic/ikoren/yalla/sel/models2/npy/'
