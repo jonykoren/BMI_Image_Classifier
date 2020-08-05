@@ -1,7 +1,7 @@
 # Data Mining and Image Classifier 
 The aim of this repository is to build deep NN classifier that distinguishes between different BMI types of people. 
 <br>The BMI metric is defined as:
-<p align="center">
+<p align="left">
   <img src="http://www.sciweavers.org/tex2img.php?eq=%24BMI%20=%20\operatorname{Height}%2F\operatorname{Weight}^2%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=">
 </p>
 <br>Where:
