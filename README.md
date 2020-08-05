@@ -1,7 +1,7 @@
 # Data Mining and Image Classifier 
 The aim of this repository is to build deep NN classifier that distinguishes between different BMI types of people. 
 The BMI metric is calculated as 
-![Weight/Height^2](http://www.sciweavers.org/tex2img.php?eq=Z_i_j%3D%5Csum_%7Bi%3D1%7D%5E%7B10%7D%20X_i_k%20%2A%20Y_k_j&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+![](http://www.sciweavers.org/tex2img.php?eq=%24\operatorname{Height}%2F\operatorname{Weight}^2%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 * x < 18.5 --> Underweight
 * 18.5 <= x < 25 --> Normal
 * 25 <= x < 30 --> Overweight
