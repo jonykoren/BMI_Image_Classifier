@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[30]:
-
-
+#!/usr/bin/env JONY python
 import torch
 import torchvision
 import torchvision.models as models
@@ -27,9 +22,6 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import roc_curve , auc
 
 
-# In[15]:
-
-
 # Specify transforms using torchvision.transforms as transforms
 transformations = transforms.Compose([
     transforms.Resize(255),
@@ -50,10 +42,6 @@ val_set = datasets.ImageFolder("/homedtic/ikoren/yalla/sel/torch/test", transfor
 # Put into a Dataloader using torch library
 train_loader = torch.utils.data.DataLoader(train_set, batch_size=4, shuffle=True)
 val_loader = torch.utils.data.DataLoader(val_set, batch_size =4, shuffle=True)
-
-
-# In[26]:
-
 
 # Get pretrained model using torchvision.models as models library
 model = models.densenet161(pretrained=True)
@@ -108,7 +96,7 @@ labels = labels.cuda()
 outputs = net(images)
 
 
-# Load probs. 
+# Load training data - npy files
 lossiloss = np.load("/homedtic/ikoren/yalla/sel/models2/npy/lossiloss.npy")
 valiloss = np.load("/homedtic/ikoren/yalla/sel/models2/npy/valiloss.npy")
 acc = np.load("/homedtic/ikoren/yalla/sel/models2/npy/acc.npy")
@@ -117,11 +105,8 @@ epoc = np.load("/homedtic/ikoren/yalla/sel/models2/npy/epoc.npy")
 _, predicted = torch.max(outputs, 1)
 
 
-
-plt.figure(figsize=(20,10))
-
-
 def imshow(img):
+    plt.figure(figsize=(20,10))
     img = img / 2 + 0.5  # unnormalize image
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
@@ -166,8 +151,6 @@ with torch.no_grad():
         c = (predicted == labels).squeeze()
 
 
-# In[28]:
-
 # Loss plot
 plt.style.use('ggplot')
 plt.figure(figsize=(20,10))
@@ -190,10 +173,6 @@ plt.xlabel("Epochs", size=20)
 plt.ylabel("Accuracy", size=20)
 plt.savefig("/homedtic/ikoren/yalla/sel/models2/npy2/accuracy.png")
 plt.show()
-
-
-# In[31]:
-
 
 # Confusion Matrix
 def test_label_predictions(model, device, test_loader):
@@ -220,9 +199,6 @@ print('Accuracy score: %f' % accuracy_score(actuals, predictions))
 print("===============")
 
 
-# In[35]:
-
-
 # Class Definition
 dataset = datasets.ImageFolder('/homedtic/ikoren/yalla/sel/torch/train', transform=transformations)
 classes1 = dataset.class_to_idx
@@ -245,9 +221,6 @@ def test_class_probabilities(model, device, test_loader, which_class):
     return [i.item() for i in actuals], [i.item() for i in probabilities]
 
 
-# In[40]:
-
-
 # Mapping Classes
 under_w = classes1["Underweight"]
 normal_w = classes1["Normal"]
@@ -259,9 +232,7 @@ name_cls = ["Underweight", "Normal", "Overweight", "Medium_Obesity", "Super_Obes
 vals_cls = [under_w, normal_w, over_w, m_o, s_o]
 
 
-# In[42]:
-
-
+# Plot ROC Curve for each class - evaluate classifier: Sensitivity and Specificity
 for i in range(len(name_cls)):
     title = name_cls[i]
     which_class = vals_cls[i]
