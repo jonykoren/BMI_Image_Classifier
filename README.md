@@ -19,6 +19,9 @@ This repository demonstrates how to minining data from web using 'Selenium' + Da
 * [train_classifier.py](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/train_classifier.py)
 * [predict_classifier.py](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/predict_classifier.py)
 
+## Data example
+* [data_example.csv](https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/data_example.csv)
+
 
 <p align="center">
   <img src="https://github.com/jonykoren/Data_Mining_and_Image_Classifier/blob/master/1.jpg?raw=true">
