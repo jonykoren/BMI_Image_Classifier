@@ -1,4 +1,4 @@
-# Data Mining and Image Classifier 
+# BMI Image Classifier & Data Mining
 The aim of this repository is to build deep NN classifier that distinguishes between different BMI types of people. 
 <br>The BMI metric is defined as:
 <p align="left">
